@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="brand">
+                <button onclick="openMenu()">
+                    &#9776;
+                </button>
+                <a href="index.html">amazona</a>
+            </div>
+            <div class="header-link">
+                <a href="cart.html">card</a>
+                <a href="signin">
+                    Signin
+                </a>
+            </div>
+        </header>
+        <aside class="sidebar">
+            <h3>Shopping category</h3>
+            <button class="close-sidebar" onclick="oncloseMenu()">X</button>
+            <ul>
+                <li>
+                    <a href="index.html">Pants</a>
+                </li>
+                <li>
+                    <a href="shirt.html">Shirts</a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="content">
+                <ul class="products">
+                    <li>
+                        <div class="product">
+                            <img class="product-image" src="images/d1.jpg" alt="" srcset="" />
+                            <div class="product-name">
+                                <a href="product.html">Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">Nike</div>
+                            <div class="product-price">$600</div>
+                            <div class="product-rating">4.5 star</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img class="product-image" src="images/d1.jpg" alt="" srcset="" />
+                            <div class="product-name">
+                                <a href="product.html">Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">Nike</div>
+                            <div class="product-price">$600</div>
+                            <div class="product-rating">4.5 star</div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="product">
+                            <img class="product-image" src="images/d1.jpg" alt="" srcset="" />
+                            <div class="product-name">
+                                <a href="product.html">Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">Nike</div>
+                            <div class="product-price">$600</div>
+                            <div class="product-rating">4.5 star</div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="product">
+                            <img class="product-image" src="images/d1.jpg" alt="" srcset="" />
+                            <div class="product-name">
+                                <a href="product.html">Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">Nike</div>
+                            <div class="product-price">$600</div>
+                            <div class="product-rating">4.5 star</div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="product">
+                            <img class="product-image" src="images/d1.jpg" alt="" srcset="" />
+                            <div class="product-name">
+                                <a href="product.html">Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">Nike</div>
+                            <div class="product-price">$600</div>
+                            <div class="product-rating">4.5 star</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer class="footer">
+            @copyright all right reserved
+        </footer>
+    </div>
+</body>
+<script>
+    function openMenu(){
+        document.querySelector(".sidebar").classList.add("open");
+    }
+    function oncloseMenu(){
+        document.querySelector(".sidebar").classList.remove("open")
+    }
+</script>
+</html>

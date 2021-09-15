@@ -1,0 +1,135 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font: 1.6rem helvetica;
+  height: 100vh;
+  margin: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+.header {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #203040;
+}
+.brand a {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header-link a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+.header-link a:hover {
+  color: #ff8000;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+  background-color: #203040;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*home screen*/
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*to make items on the left side after 100% width*/
+  flex-wrap: wrap;
+}
+.products li {
+  /* flex: 0 1 34rem; */
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem;
+  height: 50rem;
+  border-bottom: 0.2rem #c0c0c0 solid;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.product-image {
+  max-width: 34rem;
+  max-height: 34rem;
+}
+.product-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.product-brand {
+  font-size: 1.2rem;
+  color: #808080;
+}
+.product-price {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #ff8000;
+}
+.product-rating {
+  margin-bottom: 1rem;
+}
+
+/*sidebar */
+.brand button{
+    font-size: 3rem;
+    padding: .5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    transform: translateX(-30rem);
+    width: 30rem;
+    background-color: #f0f0f0;
+    height: 100%;
+}
+.sidebar.open{
+    transform: translateX(0);
+}
+.close-sidebar{
+  
+   border-radius: 50%;
+   border: 0.1rem black solid;
+   width: 3rem;
+   height: 3rem;
+   padding: .5rem;
+   font-size: 2rem;
+   cursor: pointer;
+   padding-top: 0;
+   position: absolute;
+   top: 1.9rem;
+   left: 24rem;
+}
