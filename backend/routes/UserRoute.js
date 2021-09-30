@@ -6,7 +6,7 @@ const router=express.Router();
 
 router.post("/signin",async (req,res)=>{
 
-
+try{
    const signinUser=await User.findOne({
        email:req.body.email,
        password:req.body.password
@@ -26,6 +26,9 @@ router.post("/signin",async (req,res)=>{
    else{
        res.status(401).send({msg:"Invalid user and password"})
    }
+}catch(err){
+    console.log("error is=",err.message)
+}
 })
 
 router.post("/register",async (req,res)=>{
